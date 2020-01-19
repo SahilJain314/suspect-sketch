@@ -10,7 +10,7 @@ PADDING = 2
 #img1Btn.image = img1
 #img1Btn.grid(row=1, column=1)
 
-def repopulate():
+def repopulate(code):
     ## PUT CODE HERE
     pass
 
@@ -30,7 +30,7 @@ def on_click(f):
         return f
     return innerfunc
 
-def image_grid(directory=IM_DIR, COL_MAX=3):
+def image_grid(directory=IM_DIR, COL_MAX=5):
     r = 0
     c = 0
     images_gui = []
@@ -50,5 +50,4 @@ def image_grid(directory=IM_DIR, COL_MAX=3):
     return images_gui
 
 image_grid()
-
 mainloop()
